@@ -1,0 +1,122 @@
+---
+sidebar_position: 3
+title: examples
+---
+
+# Examples
+
+Creating buttons with status properties [DEMO](https://codesandbox.io/s/fly-jss-css-in-js-wgrrc?file=/src/FlyCreate.js)
+
+```jsx title="/src/FlyCreate.js"
+import fly, { css } from "fly-jss";
+
+const styles = fly.create({
+  default: css`
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  `,
+  outline: {
+    border: "2px solid rgb(30,130,230)",
+    background: "none",
+    color: "rgb(30,130,230)"
+  },
+  text: {
+    color: "rgb(30,130,230)",
+    background: "none",
+    border: "none"
+  },
+  solid: {
+    background: "rgb(30,130,230)",
+    color: "white",
+    border: "none"
+  }
+});
+
+export default function FlyCreate() {
+  return (
+    <div>
+      <button className={styles("default", "outline")}>OUTLINE</button>
+      <button className={styles("default", "text")}>TEXT</button>
+      <button
+        className={styles({
+          default: true,
+          solid: true
+        })}
+      >
+        SOLID
+      </button>
+    </div>
+  );
+}
+```
+
+export const Button = ({text,type}) => {
+  const styles = {
+    solid : {
+      background: "rgb(30,130,230)",
+      color: "white",
+      border: "none",
+    },
+    text : {
+      color: "rgb(30,130,230)",
+      background: "none",
+      border: "none",
+    },
+    outline : {
+      border: "2px solid rgb(30,130,230)",
+      background: "none",
+      color: "rgb(30,130,230)"
+    }
+  }
+  return (
+    <button style={{
+        padding: "10px",
+        borderRadius: "5px",
+        fontWeight: "bold",
+        ...styles[type]
+    }}>{text}</button>
+  ) 
+}
+
+<Button type="primary" text="OUTLINE" />
+<Button type="text" text="TEXT" />
+<Button  type="solid" text="SOLID" />
+
+<br/>
+<br/>
+
+Creating buttons with dynamic properties [DEMO](https://codesandbox.io/s/fly-jss-css-in-js-wgrrc?file=/src/FlyDynamic.js)
+
+```jsx title="/src/FlyDynamic.js"
+import fly from "fly-jss";
+
+const styles = fly.createDynamic({
+  button: ([r, g, b]) => ({
+    background: `rgb(${r},${g},${b})`,
+    padding : "10px"
+  })
+});
+
+export default function FlyDynamic() {
+  const button1 = styles({
+    button: [150, 180, 220]
+  });
+  const button2 = styles({
+    button: [100, 250, 20]
+  });
+  return (
+    <div>
+      <button className={button1}>BUTTON 1</button>
+      <button className={button2}>BUTTON 2</button>
+    </div>
+  );
+}
+```
+
+export const DynamicButton = ({text,bg}) => (
+  <button style={{background:bg,padding:"10px"}}>{text}</button>
+)
+
+<DynamicButton text="BUTTON 1" bg="rgb(150,180,220)" />
+<DynamicButton text="BUTTON 2" bg="rgb(100,250,20)" />

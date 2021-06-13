@@ -1,14 +1,17 @@
+
+const DEVELOPMENT = process.env.NODE_ENV === "development"
+
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Fly JSS',
   tagline: 'Create atomic CSS in JS inspired in Stylex at Facebook',
-  url: 'https://github.com/jhony-24/fly-jss',
-  baseUrl: '/',
+  url: 'https://github.com/jhony-24/fly-jss-documentation',
+  baseUrl: DEVELOPMENT ? '/' : '/fly-jss-documentation/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.png',
-  organizationName: 'Fly JSS', 
-  projectName: 'Fly JSS', 
+  organizationName: 'jhony-24', 
+  projectName: 'fly-jss', 
   themeConfig: {
     navbar: {
       title: 'Fly JSS',
@@ -104,7 +107,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/jhony-24/fly-jss',
+          editUrl: 'https://github.com/jhony-24/fly-jss-documentation',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
