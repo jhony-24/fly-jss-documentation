@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://github.com/jhony-24/fly-jss-documentation/blog</id>
+    <title>Fly JSS Blog</title>
+    <updated>2015-10-25T23:29:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://github.com/jhony-24/fly-jss-documentation/blog"/>
+    <subtitle>Fly JSS Blog</subtitle>
+    <icon>https://github.com/jhony-24/fly-jss-documentation/img/logo.png</icon>
+</feed>
