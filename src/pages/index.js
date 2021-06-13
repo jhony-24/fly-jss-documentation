@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import FlyJSSLogoXL from '@site/static/img/logo-xl.png';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -25,7 +26,7 @@ function HomepageHeader() {
             </a>
           </div>
         </div>
-        <img src="static/img/logo-xl.png" className={styles.heroLogo} />
+        <img src={FlyJSSLogoXL} className={styles.heroLogo} />
       </div>
     </header>
   );
