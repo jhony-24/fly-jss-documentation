@@ -3,7 +3,7 @@ title: Introduction
 sidebar_position: 1
 ---
 
-# Getting started with Fly JSS
+# Getting started
 
 
 hola
