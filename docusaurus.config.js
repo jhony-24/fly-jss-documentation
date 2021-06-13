@@ -1,36 +1,45 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Fly JSS',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: 'Create atomic CSS in JS inspired in Stylex at Facebook',
+  url: 'https://github.com/jhony-24/fly-jss',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Fly JSS', 
+  projectName: 'Fly JSS', 
   themeConfig: {
     navbar: {
       title: 'Fly JSS',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Fly JSS',
         src: 'img/logo.svg',
       },
       items: [
         {
-          type: 'doc',
-          docId : 'overview',
-          label: 'Tutorial',
-          position: 'left',
+          to : '/docs/introduction',
+          label: 'Getting started',
+          position: 'right',
         },
         {
-          to: '/blog', 
-          label: 'Blog',
-          position: 'left'
+          to: '/docs/api', 
+          label: 'API',
+          position: 'right'
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://www.npmjs.com/package/fly-jss',
+          label: 'Npm',
+          position: 'right',
+        },
+        {
+          href: 'https://github.com/jhony-24/fly-jss',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://sebastienlorber.com/atomic-css-in-js',
+          label: 'Atomic CSS in JS',
           position: 'right',
         },
       ],
@@ -42,8 +51,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Getting started',
+              to: '/docs/introduction',
+            },
+            {
+              label: 'API',
+              to: '/docs/api',
             },
           ],
         },
@@ -68,17 +81,21 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'Npm',
+              href : "https://www.npmjs.com/package/fly-jss"
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/jhony-24/fly-jss',
             },
+            {
+              label : 'Atomic CSS in JS',
+              href : 'https://sebastienlorber.com/atomic-css-in-js'
+            }
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © 2020-2021 My practice project, Inc. Fly JSS.`,
     },
   },
   presets: [
@@ -87,14 +104,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/jhony-24/fly-jss',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
