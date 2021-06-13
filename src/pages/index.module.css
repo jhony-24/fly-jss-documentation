@@ -23,5 +23,15 @@
   .heroBanner {
     padding: 2rem;
   }
+  .heroContainer {
+    flex-direction: column-reverse;
+  }
+  .buttons {
+    display: flex;
+  }
+  .heroLogo {
+    height: 145px;
+    margin-bottom: 15px;
+  }
 }
 
