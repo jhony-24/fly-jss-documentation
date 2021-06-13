@@ -6,6 +6,10 @@ sidebar_position: 5
 
 The main way to use styles is instancing the method create of module. After we use the method props to pass arguments. You can see more examples [here](https://codesandbox.io/s/fly-jss-css-in-js-wgrrc).
 
+:::note You can use the css helper
+You have another option to set object styles, How ? using the **css** helper.
+:::
+
 ```jsx
 import fly, { css } from "fly-jss";
 
