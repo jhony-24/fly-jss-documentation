@@ -61,19 +61,19 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Work with',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'React',
+              href: 'https://github.com/facebook/react',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Vue',
+              href: 'https://github.com/vuejs/vue',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Javascript',
+              href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
             },
           ],
         },
@@ -95,7 +95,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © 2020-2021 My practice project, Inc. Fly JSS.`,
+      copyright: `Copyright ©2021 Project of type css in jss, Fly JSS.`,
     },
   },
   presets: [
