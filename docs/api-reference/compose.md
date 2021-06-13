@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-Compose diferent styles.
+Compose diferent static and dynamic styles.
 
 
 ```js

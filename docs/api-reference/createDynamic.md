@@ -14,3 +14,7 @@ const styles = fly.createDynamic({
   })
 })
 ```
+
+:::caution This feature can't work good with complex parameters
+If you have a suggestion to improve this features, welcome. Thanks! 😊
+:::

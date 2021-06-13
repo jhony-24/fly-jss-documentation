@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # using styles
 
-Get a list properties created in the instance of styles. If you want to have a dynamic property this would cause an error ```styles(...name, {...name} )```.
+Get a list properties created in the instance of styles. ```styles(...name, {...name} )```.
 
 
 **Using static props**
