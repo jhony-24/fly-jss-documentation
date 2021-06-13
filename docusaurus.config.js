@@ -21,12 +21,12 @@ module.exports = {
       },
       items: [
         {
-          to : '/docs/introduction/getting-started',
+          to : '/docs/Introduction/getting-started',
           label: 'Getting started',
           position: 'right',
         },
         {
-          to: '/docs/api-reference/api-reference', 
+          to: '/docs/Api-reference/api-reference', 
           label: 'API',
           position: 'right'
         },
@@ -55,11 +55,11 @@ module.exports = {
           items: [
             {
               label: 'Getting started',
-              to: '/docs/introduction/getting-started',
+              to: '/docs/Introduction/getting-started',
             },
             {
               label: 'API',
-              to: '/docs/api-reference/api-reference',
+              to: '/docs/Api-reference/api-reference',
             },
           ],
         },
