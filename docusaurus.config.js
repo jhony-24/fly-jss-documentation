@@ -26,7 +26,7 @@ module.exports = {
           position: 'right',
         },
         {
-          to: '/docs/Api-reference/api-reference', 
+          to: '/docs/API-reference/api-reference', 
           label: 'API',
           position: 'right'
         },
@@ -59,7 +59,7 @@ module.exports = {
             },
             {
               label: 'API',
-              to: '/docs/Api-reference/api-reference',
+              to: '/docs/API-reference/api-reference',
             },
           ],
         },
