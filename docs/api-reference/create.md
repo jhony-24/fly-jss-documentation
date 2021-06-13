@@ -4,7 +4,7 @@ sidebar_position: 2
 
 Create a instance of styles. You can create some property how an object.
 
-```js
+```js {5,8}
 import { fly } from "fly-jss";
 
 const styles = fly.create({
