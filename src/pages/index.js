@@ -17,7 +17,7 @@ function HomepageHeader() {
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg margin-right--xs"
-              to="/docs/introduction">
+              to="/docs/introduction/getting-started">
               Get started  
             </Link>
             <a target="_blank" href="https://www.npmjs.com/package/fly-jss" className="button button--primary button--lg">
