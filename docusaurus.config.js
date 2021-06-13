@@ -6,7 +6,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
   organizationName: 'Fly JSS', 
   projectName: 'Fly JSS', 
   themeConfig: {
@@ -14,7 +14,7 @@ module.exports = {
       title: 'Fly JSS',
       logo: {
         alt: 'Fly JSS',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
